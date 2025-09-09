@@ -1,6 +1,6 @@
 # Electron Template
 
-Electron app para desenvolvimento do launcher do Wartide.
+Template para desenvolvimento de uma aplicação desktop usando Node + React.
 
 ## Requisitos
 
