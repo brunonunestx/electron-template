@@ -1,4 +1,4 @@
-# Wartide Launcher
+# Electron Template
 
 Electron app para desenvolvimento do launcher do Wartide.
 
