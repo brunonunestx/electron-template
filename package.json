@@ -1,0 +1,24 @@
+{
+  "name": "launcher",
+  "version": "1.0.0",
+  "description": "Electron app to develop the launcher of Wartide",
+  "main": "dist/main.js",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "build:react": "cd renderer && yarn install && yarn build",
+    "dev:react": "cd renderer && yarn dev",
+    "build:main": "tsc",
+    "start": "yarn build:react && yarn build:main && electron .",
+    "dev": "concurrently \"yarn dev:react\" \"tsc --watch\" \"cross-env NODE_ENV=development electron .\""
+  },
+  "dependencies": {
+    "electron": "^38.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0",
+    "concurrently": "^8.2.0",
+    "cross-env": "^7.0.3"
+  }
+}
